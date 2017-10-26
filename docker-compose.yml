@@ -1,0 +1,15 @@
+version: '2'
+services:
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_USER=sitemap
+      - POSTGRES_PASSWORD=sitemap
+    ports:
+      - '127.0.0.1:5432:5432'
+  rabbit:
+    image: rabbitmq:management-alpine
+    hostname: my-rabbit
+    ports:
+      - '127.0.0.1:15671:15671'
+      - '127.0.0.1:15672:15672'
