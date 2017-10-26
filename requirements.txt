@@ -4,6 +4,7 @@
 #
 #    pip-compile --output-file requirements.txt requirements.in
 #
+dj-database-url==0.4.2
 django==1.11.6
 pika==0.11.0
 psycopg2==2.7.3.2
